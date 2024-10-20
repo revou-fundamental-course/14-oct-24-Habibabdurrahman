@@ -1,11 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css\styles.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <header>
+      <!-- logo icon dan nav bar -->
+      <!-- logo -->
+      <div>
+        <img
+          src="assets\Logo.jpg"
+          alt="Logo ITA Studio"
+          width="50px"
+          height="50px"
+        />
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Our Profile</a>
+        <a href="#">Portofolio</a>
+        <a href="#">Message Us</a>
+      </nav>
+    </header>
+    <main>
+      <!-- ini isi dengan konten -->
+      <section>
+        <header>
+          <h1>Hi user, Welcome</h1>
+        </header>
+
+        <article>
+          <p>Lorem Ipsum</p>
+
+          <!-- banner -->
+          <div></div>
+        </article>
+      </section>
+
+      <section>
+        <header>
+          <h1>Profile</h1>
+        </header>
+      </section>
+
+      <section>
+        <header>
+          <h1>Portofolio</h1>
+        </header>
+      </section>
+
+      <section>
+        <header>
+          <h1 style="margin: 5px">Message Us!</h1>
+          <article
+            style="display: flex; justify-content: space-between; padding: 20px"
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-between; */
+                /* border: solid; */
+                width: 40%;
+                padding: 5px 10px 5px 5px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  /* margin: 5px; */
+                  width: 95%;
+                  /* border: solid; */
+                  padding: 5px 5px 5px 5px;
+                  border-width: thin;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 30%;
+                    /* border: solid; */
+                    padding: 2px;
+                    border-width: thin;
+                  "
+                >
+                  <div>Nama</div>
+                  <div>:</div>
+                </div>
+
+                <div style="width: 65%">Input</div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  /* margin: 5px; */
+                  width: 95%;
+                  /* border: solid; */
+                  padding: 5px 5px 5px 5px;
+                  border-width: thin;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 30%;
+                    /* border: solid; */
+                    padding: 2px;
+                    border-width: thin;
+                  "
+                >
+                  <div>Tanggal Lahir</div>
+                  <div>:</div>
+                </div>
+
+                <div style="width: 65%">Input</div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  /* margin: 5px; */
+                  width: 95%;
+                  /* border: solid; */
+                  padding: 5px 5px 5px 5px;
+                  border-width: thin;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 30%;
+                    /* border: solid; */
+                    padding: 2px;
+                    border-width: thin;
+                  "
+                >
+                  <div>Jenis Kelamin</div>
+                  <div>:</div>
+                </div>
+
+                <div style="width: 65%">Input</div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  /* margin: 5px; */
+                  width: 95%;
+                  /* border: solid; */
+                  padding: 5px 5px 5px 5px;
+                  border-width: thin;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 30%;
+                    /* border: solid; */
+                    padding: 2px;
+                    border-width: thin;
+                  "
+                >
+                  <div>Pesan</div>
+                  <div>:</div>
+                </div>
+
+                <div style="width: 65%">Input</div>
+              </div>
+            </div>
+            <div
+              style="
+                background-color: aqua;
+                border: solid;
+                border-width: thin;
+                width: 50%;
+                height: 100px;
+                padding: 20px;
+                align-self: center;
+              "
+            >
+              Ini Ouput Submit
+            </div>
+            <!-- <form style="width: 20%">
+              <div style="display: flex; justify-content: space-between">
+                <label for="name">Nama</label>
+                <div style="text-align: right">:</div>
+                <div><input id="name" type="text" /></div>
+              </div>
+              <div style="display: flex; justify-content: space-between">
+                <label for="tgl-lahir">Tanggal lahir</label>
+                <div>: <input id="tgl-lahir" type="text" /></div>
+              </div>
+              <div style="display: flex; justify-content: space-between">
+                <label for="gender">Jenis Kelamin</label>
+                <div>
+                  : <input type="radio" id="male" name="gender" />
+                  <label for="male">Laki-laki</label>
+
+                  <input type="radio" id="female" name="gender" />
+                  <label for="female">Perempuan</label>
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  justify-items: center;
+                "
+              >
+                <label for="message">Pesan</label>
+                <div style="display: flex; justify-items: center">
+                  : <textarea>Placeholder</textarea>
+                </div>
+              </div>
+              <input type="submit" value="Submit" />
+            </form> -->
+          </article>
+        </header>
+      </section>
+    </main>
+    <footer>
+      <!-- copyright -->
+      <div>Made by Habib Abdurrahman</div>
+    </footer>
+  </body>
 </html>
