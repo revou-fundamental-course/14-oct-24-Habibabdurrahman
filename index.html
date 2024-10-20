@@ -5,41 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css\styles.css" />
-    <style></style>
+    <style>
+      .banner {
+        width: 100%; /* or any custom size */
+        height: 100%;
+        object-fit: contain;
+      }
+    </style>
   </head>
 
   <body>
-    <header>
+    <header
+      style="
+        display: flex;
+        justify-content: space-between;
+        background-color: #fcc112;
+      "
+    >
       <!-- logo icon dan nav bar -->
       <!-- logo -->
       <div>
         <img
-          src="assets\Logo.jpg"
-          alt="Logo ITA Studio"
-          width="50px"
-          height="50px"
+          src="assets\Logo.png"
+          alt="Logo Hallery Studio"
+          width="100px"
+          height="100px"
+          style="vertical-align: middle"
         />
       </div>
 
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Our Profile</a>
-        <a href="#">Portofolio</a>
-        <a href="#">Message Us</a>
+      <nav style="display: flex; align-items: center">
+        <a
+          href="#"
+          style="
+            text-decoration: none;
+            font-size: 21px;
+            background-color: #1f1955;
+            color: #fcc112;
+            height: 100px;
+            width: 150px;
+            align-content: center;
+            text-align: center;
+          "
+          >Home</a
+        >
+        <a
+          href="#"
+          style="
+            text-decoration: none;
+            font-size: 21px;
+            background-color: #1f1955;
+            color: #fcc112;
+            height: 100px;
+            width: 150px;
+            align-content: center;
+            text-align: center;
+          "
+          >Our Profile</a
+        >
+        <a
+          href="#"
+          style="
+            text-decoration: none;
+            font-size: 21px;
+            background-color: #1f1955;
+            color: #fcc112;
+            height: 100px;
+            width: 150px;
+            align-content: center;
+            text-align: center;
+          "
+          >Portofolio</a
+        >
+        <a
+          href="#"
+          style="
+            text-decoration: none;
+            font-size: 21px;
+            background-color: #1f1955;
+            color: #fcc112;
+            height: 100px;
+            width: 150px;
+            align-content: center;
+            text-align: center;
+          "
+          >Message Us</a
+        >
       </nav>
     </header>
-    <main>
+
+    <main style="background-color: whitesmoke">
       <!-- ini isi dengan konten -->
       <section>
         <header>
-          <h1>Hi user, Welcome</h1>
+          <h1 style="margin-top: 0px; padding-top: 15px; font-size: 32px">
+            Hi User, Welcome to Hallery Studio
+          </h1>
         </header>
 
         <article>
-          <p>Lorem Ipsum</p>
+          <p style="font-size: 21px">
+            Established in 2020, Hallery Studio is a national firm of architects
+            and interior designers based on Sleman - Yogyakarta with experiences
+            designing projects that spans across Indonesia, focus exclusively on
+            green constructions.
+          </p>
 
           <!-- banner -->
-          <div></div>
+          <div style="height: 578px">
+            <img class="banner" src="assets\Banner.jpg" alt="Banner" />
+          </div>
         </article>
       </section>
 
@@ -231,6 +306,7 @@
         </header>
       </section>
     </main>
+    <hr />
     <footer>
       <!-- copyright -->
       <div>Made by Habib Abdurrahman</div>
