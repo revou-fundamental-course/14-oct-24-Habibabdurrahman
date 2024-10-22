@@ -3,11 +3,11 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
-.banner {
+#banner {
   border: 1px solid;
   height: 578px;
   margin: 0px 50px;
-  background-image: url("assets\Image.jpg");
+  background-image: url("assets\image.jpg");
 }
 
 /* width: 100%; or any custom size */
