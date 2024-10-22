@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css\styles.css" />
-    <style>
-      .banner {
-        width: 100%; /* or any custom size */
-        height: 100%;
-        object-fit: contain;
-      }
-    </style>
   </head>
 
   <body>
@@ -20,6 +13,9 @@
         display: flex;
         justify-content: space-between;
         background-color: #fcc112;
+        position: sticky;
+        top: 0;
+        width: 100%;
       "
     >
       <!-- logo icon dan nav bar -->
@@ -36,10 +32,12 @@
 
       <nav style="display: flex; align-items: center">
         <a
-          href="#"
+          href="#top"
           style="
             text-decoration: none;
             font-size: 21px;
+            font-family: sans-serif;
+            font-variant: all-small-caps;
             background-color: #1f1955;
             color: #fcc112;
             height: 100px;
@@ -50,10 +48,12 @@
           >Home</a
         >
         <a
-          href="#"
+          href="#profile"
           style="
             text-decoration: none;
             font-size: 21px;
+            font-family: sans-serif;
+            font-variant: all-small-caps;
             background-color: #1f1955;
             color: #fcc112;
             height: 100px;
@@ -64,10 +64,12 @@
           >Our Profile</a
         >
         <a
-          href="#"
+          href="#portofolio"
           style="
             text-decoration: none;
             font-size: 21px;
+            font-family: sans-serif;
+            font-variant: all-small-caps;
             background-color: #1f1955;
             color: #fcc112;
             height: 100px;
@@ -75,13 +77,15 @@
             align-content: center;
             text-align: center;
           "
-          >Portofolio</a
+          >Projects</a
         >
         <a
-          href="#"
+          href="#contact"
           style="
             text-decoration: none;
             font-size: 21px;
+            font-family: sans-serif;
+            font-variant: all-small-caps;
             background-color: #1f1955;
             color: #fcc112;
             height: 100px;
@@ -94,214 +98,437 @@
       </nav>
     </header>
 
-    <main style="background-color: whitesmoke">
+    <main>
       <!-- ini isi dengan konten -->
       <section>
         <header>
-          <h1 style="margin-top: 0px; padding-top: 15px; font-size: 32px">
+          <h1
+            style="
+              margin-top: 0px;
+              padding-top: 15px;
+              font-size: 32px;
+              font-family: sans-serif;
+              text-align: center;
+            "
+          >
             Hi User, Welcome to Hallery Studio
           </h1>
         </header>
 
         <article>
-          <p style="font-size: 21px">
-            Established in 2020, Hallery Studio is a national firm of architects
-            and interior designers based on Sleman - Yogyakarta with experiences
-            designing projects that spans across Indonesia, focus exclusively on
-            green constructions.
-          </p>
+          <h2
+            style="
+              font-size: 24px;
+              font-variant: all-small-caps;
+              font-family: system-ui;
+              font-weight: 200;
+              text-align: center;
+            "
+          >
+            The <b>Hallery Studio</b> Team is made up of young, innovative,
+            dynamic, and extremely driven individuals that are passionate about
+            transforming concepts into creative designs and materialized these
+            designs into real end product.
+          </h2>
 
           <!-- banner -->
-          <div style="height: 578px">
-            <img class="banner" src="assets\Banner.jpg" alt="Banner" />
+          <div class="banner">
+            <!-- <img class="banner" src="assets\Banner.jpg" alt="Banner" /> -->
           </div>
         </article>
       </section>
 
-      <section>
+      <section id="profile" style="margin: 0px 50px">
         <header>
-          <h1>Profile</h1>
-        </header>
-      </section>
-
-      <section>
-        <header>
-          <h1>Portofolio</h1>
-        </header>
-      </section>
-
-      <section>
-        <header>
-          <h1 style="margin: 5px">Message Us!</h1>
-          <article
-            style="display: flex; justify-content: space-between; padding: 20px"
-          >
-            <div
+          <h1 style="font-size: 32px; font-family: sans-serif">Who Are We?</h1>
+          <p style="font-size: 21px; font-family: system-ui; font-weight: 100">
+            Established in 2020, Hallery Studio is a national firm of architects
+            and interior designers founded on the belief that ideas and skilled
+            craftsmanship are essential in enriching people's lives. Our studio
+            is based on Sleman - Yogyakarta with experiences designing projects
+            that spans across Indonesia, focus exclusively on providing finest
+            quality, excellent service, punctuality and partnership during the
+            entire project.
+          </p>
+          <div style="margin: 10px 50px">
+            <h2
+              style="margin: 5px 0px; font-size: 24px; font-family: sans-serif"
+            >
+              What We Offer
+            </h2>
+            <p
               style="
-                display: flex;
-                flex-direction: column;
-                /* justify-content: space-between; */
-                /* border: solid; */
-                width: 40%;
-                padding: 5px 10px 5px 5px;
+                margin: 0px 5px;
+                font-size: 18px;
+                font-family: system-ui;
+                font-weight: 100;
               "
+            >
+              - We pay attention to our customers, comprehend their demands, and
+              address them.
+            </p>
+            <p
+              style="
+                margin: 0px 5px;
+                font-size: 18px;
+                font-family: system-ui;
+                font-weight: 100;
+              "
+            >
+              - Our method involves the strategic integration of technical
+              disciplines, regardless of the project's nature—renovation,
+              construction, or rejuvenation.
+            </p>
+            <p
+              style="
+                margin: 0px 5px;
+                font-size: 18px;
+                font-family: system-ui;
+                font-weight: 100;
+              "
+            >
+              - Our goals are the best quality, the quickest turnaround time,
+              and the best financial value.
+            </p>
+            <p
+              style="
+                margin: 0px 5px;
+                font-size: 18px;
+                font-family: system-ui;
+                font-weight: 100;
+              "
+            >
+              - We demand top-notch finishing and place a high priority on
+              project management and meticulous execution.
+            </p>
+          </div>
+          <div style="margin: 10px 50px">
+            <h2
+              style="margin: 5px 0px; font-size: 24px; font-family: sans-serif"
+            >
+              Our Headquarter
+            </h2>
+            <p
+              style="
+                margin: 0px 5px;
+                font-size: 18px;
+                font-family: system-ui;
+                font-weight: 100;
+              "
+            >
+              Jl Tanjung No.320
+            </p>
+            <p
+              style="
+                margin: 0px 5px;
+                font-size: 18px;
+                font-family: system-ui;
+                font-weight: 100;
+              "
+            >
+              Condongcatur, Depok
+            </p>
+            <p
+              style="
+                margin: 0px 5px;
+                font-size: 18px;
+                font-family: system-ui;
+                font-weight: 100;
+              "
+            >
+              Sleman 55238, Indonesia
+            </p>
+          </div>
+        </header>
+      </section>
+
+      <section id="portofolio" style="margin: 0px 50px">
+        <header>
+          <h1 style="font-size: 32px; font-family: sans-serif">
+            Our Latest Projects
+          </h1>
+        </header>
+        <main style="display: flex; justify-content: space-around">
+          <!-- Ini container porto untuk 3 gambar -->
+          <div>
+            <img
+              src="assets\Portofolio 1.jpg"
+              alt="Bank Mandiri Denpasar"
+              height="200px"
+            />
+          </div>
+          <div>
+            <img
+              src="assets\Portofolio 2.jpg"
+              alt="Hotel Interior"
+              height="200px"
+            />
+          </div>
+          <div>
+            <img
+              src="assets\Portofolio 3.jpg"
+              alt="Office Interior"
+              height="200px"
+            />
+          </div>
+        </main>
+      </section>
+
+      <section id="contact" style="margin: 0px 50px">
+        <header>
+          <h1 style="font-size: 32px; font-family: sans-serif">Message Us!</h1>
+
+          <article
+            style="
+              display: flex;
+              justify-content: space-between;
+              padding-left: 50px;
+              padding-right: 50px;
+            "
+          >
+            <form
+              action="https://www.google.com/"
+              method="post"
+              style="width: 50%; display: flex; padding: 20px"
             >
               <div
                 style="
                   display: flex;
-                  justify-content: space-between;
-                  /* margin: 5px; */
-                  width: 95%;
+                  flex-direction: column;
+                  /* justify-content: space-between; */
                   /* border: solid; */
-                  padding: 5px 5px 5px 5px;
-                  border-width: thin;
+                  width: 100%;
+                  padding: 5px 10px 5px 5px;
                 "
               >
                 <div
                   style="
                     display: flex;
                     justify-content: space-between;
-                    width: 30%;
+                    /* margin: 5px; */
+                    width: 95%;
                     /* border: solid; */
-                    padding: 2px;
+                    padding: 5px 5px 5px 5px;
                     border-width: thin;
+                    align-items: center;
                   "
                 >
-                  <div>Nama</div>
-                  <div>:</div>
-                </div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      width: 30%;
+                      /* border: solid; */
+                      padding: 2px;
+                      border-width: thin;
+                      align-items: center;
+                    "
+                  >
+                    <div
+                      style="
+                        font-size: 21px;
+                        font-family: system-ui;
+                        font-weight: 100;
+                      "
+                    >
+                      Full Name
+                    </div>
+                    <div>:</div>
+                  </div>
 
-                <div style="width: 65%">Input</div>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  /* margin: 5px; */
-                  width: 95%;
-                  /* border: solid; */
-                  padding: 5px 5px 5px 5px;
-                  border-width: thin;
-                "
-              >
+                  <div
+                    style="
+                      width: 65%;
+                      height: 100%;
+                      display: flex;
+                      border: 1px solid;
+                    "
+                  >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        padding: 0px;
+                        border: 0px;
+                      "
+                    />
+                  </div>
+                </div>
                 <div
                   style="
                     display: flex;
                     justify-content: space-between;
-                    width: 30%;
+                    /* margin: 5px; */
+                    width: 95%;
                     /* border: solid; */
-                    padding: 2px;
+                    padding: 5px 5px 5px 5px;
                     border-width: thin;
                   "
                 >
-                  <div>Tanggal Lahir</div>
-                  <div>:</div>
-                </div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      width: 30%;
+                      /* border: solid; */
+                      padding: 2px;
+                      border-width: thin;
+                      align-items: center;
+                    "
+                  >
+                    <div
+                      style="
+                        font-size: 21px;
+                        font-family: system-ui;
+                        font-weight: 100;
+                      "
+                    >
+                      Date of Birth
+                    </div>
+                    <div>:</div>
+                  </div>
 
-                <div style="width: 65%">Input</div>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  /* margin: 5px; */
-                  width: 95%;
-                  /* border: solid; */
-                  padding: 5px 5px 5px 5px;
-                  border-width: thin;
-                "
-              >
+                  <div
+                    style="
+                      width: 65%;
+                      height: 100%;
+                      display: flex;
+                      border: 1px solid;
+                    "
+                  >
+                    <input
+                      type="date"
+                      id="dob"
+                      name="dob"
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        padding: 0px;
+                        border: 0px;
+                      "
+                    />
+                  </div>
+                </div>
                 <div
                   style="
                     display: flex;
                     justify-content: space-between;
-                    width: 30%;
+                    /* margin: 5px; */
+                    width: 95%;
                     /* border: solid; */
-                    padding: 2px;
+                    padding: 5px 5px 5px 5px;
                     border-width: thin;
                   "
                 >
-                  <div>Jenis Kelamin</div>
-                  <div>:</div>
-                </div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      width: 30%;
+                      /* border: solid; */
+                      padding: 2px;
+                      border-width: thin;
+                    "
+                  >
+                    <div
+                      style="
+                        font-size: 21px;
+                        font-family: system-ui;
+                        font-weight: 100;
+                      "
+                    >
+                      Gender
+                    </div>
+                    <div>:</div>
+                  </div>
 
-                <div style="width: 65%">Input</div>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  /* margin: 5px; */
-                  width: 95%;
-                  /* border: solid; */
-                  padding: 5px 5px 5px 5px;
-                  border-width: thin;
-                "
-              >
+                  <div style="width: 65%">
+                    <input type="radio" id="male" name="gender" />
+                    <label
+                      for="male"
+                      style="
+                        font-size: 21px;
+                        font-family: system-ui;
+                        font-weight: 100;
+                      "
+                      >Male</label
+                    >
+
+                    <input type="radio" id="female" name="gender" />
+                    <label
+                      for="female"
+                      style="
+                        font-size: 21px;
+                        font-family: system-ui;
+                        font-weight: 100;
+                      "
+                      >Female</label
+                    >
+                  </div>
+                </div>
                 <div
                   style="
                     display: flex;
                     justify-content: space-between;
-                    width: 30%;
+                    /* margin: 5px; */
+                    width: 95%;
                     /* border: solid; */
-                    padding: 2px;
+                    padding: 5px 5px 5px 5px;
                     border-width: thin;
                   "
                 >
-                  <div>Pesan</div>
-                  <div>:</div>
-                </div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      width: 30%;
+                      /* border: solid; */
+                      padding: 2px;
+                      border-width: thin;
+                    "
+                  >
+                    <div
+                      style="
+                        font-size: 21px;
+                        font-family: system-ui;
+                        font-weight: 100;
+                      "
+                    >
+                      Message
+                    </div>
+                    <div>:</div>
+                  </div>
 
-                <div style="width: 65%">Input</div>
+                  <div style="width: 65%">
+                    <textarea
+                      name="message"
+                      style="width: 100%; height: 100px"
+                      placeholder="Max 200 character"
+                      maxlength="200"
+                    ></textarea>
+                  </div>
+                </div>
               </div>
-            </div>
+            </form>
             <div
               style="
                 background-color: aqua;
                 border: solid;
                 border-width: thin;
                 width: 50%;
-                height: 100px;
+                height: 150px;
+                margin: 0px 50px;
                 padding: 20px;
                 align-self: center;
               "
             >
-              Ini Ouput Submit
+              Ini Ouput Submit Ini Ouput Submit Ini Ouput Submit Ini Ouput
+              Submit Ini Ouput Submit Ini Ouput Submit Ini Ouput SubmitIni Ouput
+              SubmitIni Ouput SubmitIni Ouput SubmitIni Ouput Submit
             </div>
-            <!-- <form style="width: 20%">
-              <div style="display: flex; justify-content: space-between">
-                <label for="name">Nama</label>
-                <div style="text-align: right">:</div>
-                <div><input id="name" type="text" /></div>
-              </div>
-              <div style="display: flex; justify-content: space-between">
-                <label for="tgl-lahir">Tanggal lahir</label>
-                <div>: <input id="tgl-lahir" type="text" /></div>
-              </div>
-              <div style="display: flex; justify-content: space-between">
-                <label for="gender">Jenis Kelamin</label>
-                <div>
-                  : <input type="radio" id="male" name="gender" />
-                  <label for="male">Laki-laki</label>
-
-                  <input type="radio" id="female" name="gender" />
-                  <label for="female">Perempuan</label>
-                </div>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  justify-items: center;
-                "
-              >
-                <label for="message">Pesan</label>
-                <div style="display: flex; justify-items: center">
-                  : <textarea>Placeholder</textarea>
-                </div>
-              </div>
-              <input type="submit" value="Submit" />
-            </form> -->
           </article>
         </header>
       </section>
