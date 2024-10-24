@@ -3,145 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hallery Studio</title>
     <link rel="stylesheet" href="css\styles.css" />
   </head>
 
   <body>
-    <header
-      style="
-        display: flex;
-        justify-content: space-between;
-        background-color: #fcc112;
-        position: sticky;
-        top: 0;
-        width: 100%;
-      "
-    >
+    <header class="top-header">
       <!-- logo icon dan nav bar -->
       <!-- logo -->
-      <div>
-        <img
-          src="assets\Logo.png"
-          alt="Logo Hallery Studio"
-          width="100px"
-          height="100px"
-          style="vertical-align: middle"
-        />
+      <div id="logo">
+        <img src="assets\Logo.png" alt="Logo Hallery Studio" width="100%" />
       </div>
 
-      <nav style="display: flex; align-items: center">
-        <a
-          href="#top"
-          style="
-            text-decoration: none;
-            font-size: 21px;
-            font-family: sans-serif;
-            font-variant: all-small-caps;
-            background-color: #1f1955;
-            color: #fcc112;
-            height: 100px;
-            width: 150px;
-            align-content: center;
-            text-align: center;
-          "
-          >Home</a
-        >
-        <a
-          href="#profile"
-          style="
-            text-decoration: none;
-            font-size: 21px;
-            font-family: sans-serif;
-            font-variant: all-small-caps;
-            background-color: #1f1955;
-            color: #fcc112;
-            height: 100px;
-            width: 150px;
-            align-content: center;
-            text-align: center;
-          "
-          >Our Profile</a
-        >
-        <a
-          href="#portofolio"
-          style="
-            text-decoration: none;
-            font-size: 21px;
-            font-family: sans-serif;
-            font-variant: all-small-caps;
-            background-color: #1f1955;
-            color: #fcc112;
-            height: 100px;
-            width: 150px;
-            align-content: center;
-            text-align: center;
-          "
-          >Projects</a
-        >
-        <a
-          href="#contact"
-          style="
-            text-decoration: none;
-            font-size: 21px;
-            font-family: sans-serif;
-            font-variant: all-small-caps;
-            background-color: #1f1955;
-            color: #fcc112;
-            height: 100px;
-            width: 150px;
-            align-content: center;
-            text-align: center;
-          "
-          >Message Us</a
-        >
+      <nav>
+        <a href="#top">Home</a>
+        <a href="#profile">Our Profile</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Message Us</a>
       </nav>
     </header>
-
+    <!-- main content -->
     <main>
-      <!-- ini isi dengan konten -->
+      <!-- welcome and intro -->
       <section>
         <header>
-          <h1
-            style="
-              margin-top: 0px;
-              padding-top: 15px;
-              font-size: 32px;
-              font-family: sans-serif;
-              text-align: center;
-            "
-          >
-            Hi User, Welcome to Hallery Studio
+          <h1 id="welcome">
+            Hi <span id="username">User</span>, Welcome to Hallery Studio
           </h1>
         </header>
 
         <article>
-          <h2
-            style="
-              font-size: 24px;
-              font-variant: all-small-caps;
-              font-family: system-ui;
-              font-weight: 200;
-              text-align: center;
-            "
-          >
+          <p class="intro">
             The <b>Hallery Studio</b> Team is made up of young, innovative,
             dynamic, and extremely driven individuals that are passionate about
             transforming concepts into creative designs and materialized these
             designs into real end product.
-          </h2>
+          </p>
 
           <!-- banner -->
-          <div class="banner">
-            <!-- <img class="banner" src="assets\Banner.jpg" alt="Banner" /> -->
+          <div id="gambar">
+            <img src="assets\image.jpg" alt="banner" />
           </div>
         </article>
       </section>
-
-      <section id="profile" style="margin: 0px 50px">
+      <!-- profile -->
+      <section class="section-content" id="profile">
         <header>
-          <h1 style="font-size: 32px; font-family: sans-serif">Who Are We?</h1>
-          <p style="font-size: 21px; font-family: system-ui; font-weight: 100">
+          <h1>Who Are We?</h1>
+          <p class="aboutus">
             Established in 2020, Hallery Studio is a national firm of architects
             and interior designers founded on the belief that ideas and skilled
             craftsmanship are essential in enriching people's lives. Our studio
@@ -150,393 +59,184 @@
             quality, excellent service, punctuality and partnership during the
             entire project.
           </p>
-          <div style="margin: 10px 50px">
-            <h2
-              style="margin: 5px 0px; font-size: 24px; font-family: sans-serif"
-            >
-              What We Offer
-            </h2>
-            <p
-              style="
-                margin: 0px 5px;
-                font-size: 18px;
-                font-family: system-ui;
-                font-weight: 100;
-              "
-            >
-              - We pay attention to our customers, comprehend their demands, and
-              address them.
-            </p>
-            <p
-              style="
-                margin: 0px 5px;
-                font-size: 18px;
-                font-family: system-ui;
-                font-weight: 100;
-              "
-            >
-              - Our method involves the strategic integration of technical
-              disciplines, regardless of the project's nature—renovation,
-              construction, or rejuvenation.
-            </p>
-            <p
-              style="
-                margin: 0px 5px;
-                font-size: 18px;
-                font-family: system-ui;
-                font-weight: 100;
-              "
-            >
-              - Our goals are the best quality, the quickest turnaround time,
-              and the best financial value.
-            </p>
-            <p
-              style="
-                margin: 0px 5px;
-                font-size: 18px;
-                font-family: system-ui;
-                font-weight: 100;
-              "
-            >
-              - We demand top-notch finishing and place a high priority on
-              project management and meticulous execution.
-            </p>
-          </div>
-          <div style="margin: 10px 50px">
-            <h2
-              style="margin: 5px 0px; font-size: 24px; font-family: sans-serif"
-            >
-              Our Headquarter
-            </h2>
-            <p
-              style="
-                margin: 0px 5px;
-                font-size: 18px;
-                font-family: system-ui;
-                font-weight: 100;
-              "
-            >
-              Jl Tanjung No.320
-            </p>
-            <p
-              style="
-                margin: 0px 5px;
-                font-size: 18px;
-                font-family: system-ui;
-                font-weight: 100;
-              "
-            >
-              Condongcatur, Depok
-            </p>
-            <p
-              style="
-                margin: 0px 5px;
-                font-size: 18px;
-                font-family: system-ui;
-                font-weight: 100;
-              "
-            >
-              Sleman 55238, Indonesia
-            </p>
-          </div>
+
+          <h2>What We Offer</h2>
+          <p>
+            We pay attention to our customers, comprehend their demands, and
+            address them.
+          </p>
+          <br />
+          <p>
+            Our method involves the strategic integration of technical
+            disciplines, regardless of the project's nature—renovation,
+            construction, or rejuvenation.
+          </p>
+          <br />
+          <p>
+            Our goals are the best quality, the quickest turnaround time, and
+            the best financial value.
+          </p>
+          <br />
+          <p>
+            We demand top-notch finishing and place a high priority on project
+            management and meticulous execution.
+          </p>
+
+          <h2>Our Headquarter</h2>
+          <p>Jl Tanjung No.320</p>
+          <p>Condongcatur, Depok</p>
+          <p>Sleman 55238, Indonesia</p>
         </header>
       </section>
-
-      <section id="portofolio" style="margin: 0px 50px">
+      <!-- projects -->
+      <section class="section-content" id="projects">
         <header>
-          <h1 style="font-size: 32px; font-family: sans-serif">
-            Our Latest Projects
-          </h1>
+          <h1>Our Latest Projects</h1>
         </header>
-        <main style="display: flex; justify-content: space-around">
-          <!-- Ini container porto untuk 3 gambar -->
-          <div>
-            <img
-              src="assets\portofolio 1.jpg"
-              alt="Bank Mandiri Denpasar"
-              height="200px"
-            />
+        <article class="slideshow-container">
+          <!-- container porto 3 image -->
+          <div class="mySlides fade">
+            <img src="assets\portofolio 1.jpg" />
           </div>
-          <div>
-            <img
-              src="assets\portofolio 2.jpg"
-              alt="Hotel Interior"
-              height="200px"
-            />
+          <div class="mySlides fade">
+            <img src="assets\portofolio 2.jpg" />
           </div>
-          <div>
-            <img
-              src="assets\portofolio 3.jpg"
-              alt="Office Interior"
-              height="200px"
-            />
+          <div class="mySlides fade">
+            <img src="assets\portofolio 3.jpg" />
           </div>
-        </main>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </article>
+        <br />
+        <div id="gambar">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </section>
-
-      <section id="contact" style="margin: 0px 50px">
+      <!-- form message -->
+      <section class="section-content" id="contact">
         <header>
-          <h1 style="font-size: 32px; font-family: sans-serif">Message Us!</h1>
+          <h1>Message Us!</h1>
 
-          <article
-            style="
-              display: flex;
-              justify-content: space-between;
-              padding-left: 50px;
-              padding-right: 50px;
-            "
-          >
-            <form
-              action="https://www.google.com/"
-              method="post"
-              style="width: 50%; display: flex; padding: 20px"
-            >
-              <div
-                style="
-                  display: flex;
-                  flex-direction: column;
-                  /* justify-content: space-between; */
-                  /* border: solid; */
-                  width: 100%;
-                  padding: 5px 10px 5px 5px;
-                "
-              >
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    /* margin: 5px; */
-                    width: 95%;
-                    /* border: solid; */
-                    padding: 5px 5px 5px 5px;
-                    border-width: thin;
-                    align-items: center;
-                  "
-                >
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      width: 30%;
-                      /* border: solid; */
-                      padding: 2px;
-                      border-width: thin;
-                      align-items: center;
-                    "
-                  >
-                    <div
-                      style="
-                        font-size: 21px;
-                        font-family: system-ui;
-                        font-weight: 100;
-                      "
-                    >
-                      Full Name
-                    </div>
-                    <div>:</div>
-                  </div>
+          <article class="input-output">
+            <form name="message-form" onsubmit="return validateForm()">
+              <!-- Form nama -->
+              <main class="form-label">
+                <div class="form-label" id="label">
+                  <span>Full Name</span>
+                  <span>:</span>
+                </div>
 
-                  <div
-                    style="
-                      width: 65%;
-                      height: 100%;
-                      display: flex;
-                      border: 1px solid;
-                    "
-                  >
+                <div class="form-label" id="inputbox">
+                  <input
+                    class="inputbox-size"
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </main>
+              <!-- Form birthdate -->
+              <main class="form-label">
+                <div class="form-label" id="label">
+                  <span>Date of Birth</span>
+                  <span>:</span>
+                </div>
+
+                <div class="form-label" id="inputbox">
+                  <input
+                    class="inputbox-size"
+                    type="date"
+                    id="dob"
+                    name="dob"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </main>
+              <!-- Form gender -->
+              <main class="form-label">
+                <div class="form-label" id="label">
+                  <span>Gender</span>
+                  <span>:</span>
+                </div>
+
+                <div class="radio-message">
+                  <span>
                     <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        padding: 0px;
-                        border: 0px;
-                      "
+                      type="radio"
+                      id="male"
+                      name="gender"
+                      value="Male"
+                      autocomplete="off"
+                      required
                     />
-                  </div>
-                </div>
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    /* margin: 5px; */
-                    width: 95%;
-                    /* border: solid; */
-                    padding: 5px 5px 5px 5px;
-                    border-width: thin;
-                  "
-                >
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      width: 30%;
-                      /* border: solid; */
-                      padding: 2px;
-                      border-width: thin;
-                      align-items: center;
-                    "
-                  >
-                    <div
-                      style="
-                        font-size: 21px;
-                        font-family: system-ui;
-                        font-weight: 100;
-                      "
-                    >
-                      Date of Birth
-                    </div>
-                    <div>:</div>
-                  </div>
-
-                  <div
-                    style="
-                      width: 65%;
-                      height: 100%;
-                      display: flex;
-                      border: 1px solid;
-                    "
-                  >
+                    <label for="male">Male</label>
+                  </span>
+                  <br />
+                  <span>
                     <input
-                      type="date"
-                      id="dob"
-                      name="dob"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        padding: 0px;
-                        border: 0px;
-                      "
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="Female"
+                      autocomplete="off"
+                      required
                     />
-                  </div>
+                    <label for="female">Female</label>
+                  </span>
                 </div>
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    /* margin: 5px; */
-                    width: 95%;
-                    /* border: solid; */
-                    padding: 5px 5px 5px 5px;
-                    border-width: thin;
-                  "
-                >
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      width: 30%;
-                      /* border: solid; */
-                      padding: 2px;
-                      border-width: thin;
-                    "
-                  >
-                    <div
-                      style="
-                        font-size: 21px;
-                        font-family: system-ui;
-                        font-weight: 100;
-                      "
-                    >
-                      Gender
-                    </div>
-                    <div>:</div>
-                  </div>
-
-                  <div style="width: 65%">
-                    <input type="radio" id="male" name="gender" />
-                    <label
-                      for="male"
-                      style="
-                        font-size: 21px;
-                        font-family: system-ui;
-                        font-weight: 100;
-                      "
-                      >Male</label
-                    >
-
-                    <input type="radio" id="female" name="gender" />
-                    <label
-                      for="female"
-                      style="
-                        font-size: 21px;
-                        font-family: system-ui;
-                        font-weight: 100;
-                      "
-                      >Female</label
-                    >
-                  </div>
+              </main>
+              <!-- Form message -->
+              <main class="message-label">
+                <div class="message-label" id="label">
+                  <span>Message</span>
+                  <span>:</span>
                 </div>
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    /* margin: 5px; */
-                    width: 95%;
-                    /* border: solid; */
-                    padding: 5px 5px 5px 5px;
-                    border-width: thin;
-                  "
-                >
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      width: 30%;
-                      /* border: solid; */
-                      padding: 2px;
-                      border-width: thin;
-                    "
-                  >
-                    <div
-                      style="
-                        font-size: 21px;
-                        font-family: system-ui;
-                        font-weight: 100;
-                      "
-                    >
-                      Message
-                    </div>
-                    <div>:</div>
-                  </div>
 
-                  <div style="width: 65%">
-                    <textarea
-                      name="message"
-                      style="width: 100%; height: 100px"
-                      placeholder="Max 200 character"
-                      maxlength="200"
-                    ></textarea>
-                  </div>
+                <div class="radio-message">
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Max 200 character"
+                    maxlength="200"
+                    autocomplete="off"
+                    required
+                  ></textarea>
                 </div>
-              </div>
+              </main>
+              <button id="btnsubmit" type="submit">Submit</button>
             </form>
-            <div
-              style="
-                background-color: aqua;
-                border: solid;
-                border-width: thin;
-                width: 50%;
-                height: 150px;
-                margin: 0px 50px;
-                padding: 20px;
-                align-self: center;
-              "
-            >
-              Ini Ouput Submit Ini Ouput Submit Ini Ouput Submit Ini Ouput
-              Submit Ini Ouput Submit Ini Ouput Submit Ini Ouput SubmitIni Ouput
-              SubmitIni Ouput SubmitIni Ouput SubmitIni Ouput Submit
+            <!-- result from input form -->
+            <div class="result">
+              <p class="output">
+                <b>Name :</b><span id="sender-full-name"></span>
+              </p>
+              <p class="output">
+                <b>Date of Birth :</b><span id="sender-dob"></span>
+              </p>
+              <p class="output">
+                <b>Gender :</b><span id="sender-gender"></span>
+              </p>
+              <p class="output">
+                <b>Message :</b><span id="sender-messages"></span>
+              </p>
             </div>
           </article>
         </header>
       </section>
     </main>
     <hr />
+    <!-- copyright -->
     <footer>
-      <!-- copyright -->
-      <div>Made by Habib Abdurrahman</div>
+      Made by Habib Abdurrahman
+      <br />
+      This page was a dummy created for a miniproject, all images belong to the
+      rightful owner
     </footer>
+    <script src="js\script.js"></script>
   </body>
 </html>

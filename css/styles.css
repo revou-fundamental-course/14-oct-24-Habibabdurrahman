@@ -1,15 +1,283 @@
-/* Ini css */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
-#banner {
-  border: 1px solid;
-  height: 578px;
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fcc112;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+}
+nav > a {
+  text-decoration: none;
+  font-size: 21px;
+  font-family: sans-serif;
+  font-variant: all-small-caps;
+  background-color: #1f1955;
+  color: #fcc112;
+  height: 100px;
+  width: 25%;
+  align-content: center;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.section-content {
   margin: 0px 50px;
-  background-image: url("assets\image.jpg");
+}
+h1 {
+  margin: 20px 0px;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+#welcome {
+  margin-top: 0px;
+  padding-top: 15px;
+  font-size: 32px;
+  font-family: sans-serif;
+  text-align: center;
+}
+h2 {
+  margin: 20px 50px;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+#logo {
+  text-align: center;
+  align-content: center;
+  width: 100px;
+}
+#gambar {
+  text-align: center;
+  align-content: center;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
 }
 
-/* width: 100%; or any custom size */
-/* height: 100%; */
-/* object-fit: contain; */
+p {
+  font-size: 18px;
+  font-family: system-ui;
+  font-weight: 100;
+  margin: 0px;
+}
+.intro {
+  font-size: 24px;
+  font-variant: all-small-caps;
+  font-weight: 200;
+  text-align: center;
+}
+.aboutus {
+  margin: 10px 50px;
+  font-size: 21px;
+}
+.output {
+  margin: 0px;
+  overflow-wrap: break-word;
+  font-size: 18px;
+}
+.porto {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+}
+.input-output {
+  display: flex;
+  justify-content: space-between;
+}
+form {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+  font-size: 21px;
+  font-family: system-ui;
+  font-weight: 100;
+  flex-direction: column;
+}
+#profile {
+  text-align: center;
+}
+.result {
+  border: 1px solid;
+
+  width: 50%;
+  height: 200px;
+  margin: 10px 0px;
+  padding: 20px 20px;
+  align-self: center;
+  overflow: auto;
+}
+
+.form-label {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5px;
+
+  align-items: center;
+}
+#label {
+  width: 30%;
+  padding: 2px;
+}
+#inputbox {
+  width: 65%;
+  height: 100%;
+  padding: 0px;
+}
+.inputbox-size {
+  width: 100%;
+  height: 100%;
+}
+.radio-message {
+  width: 65%;
+}
+.message-label {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5px;
+}
+#message {
+  width: 100%;
+  height: 100px;
+}
+footer {
+  font-size: 14px;
+}
+
+/* Image Project Autoslide */
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style responsive width */
+@media only screen and (max-width: 960px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+
+  form {
+    font-size: 12px;
+    width: 100%;
+    padding: 0px;
+  }
+  .output {
+    font-size: 12px;
+  }
+  .top-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    width: 100%;
+  }
+  #logo {
+    width: 15%;
+  }
+  nav > a {
+    height: 60px;
+    font-size: 16px;
+  }
+  .input-output {
+    flex-direction: column;
+  }
+  .result {
+    width: 100%;
+  }
+  .aboutus {
+    margin: 0px;
+  }
+  .intro {
+    font-size: 21px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  .aboutus {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+  footer {
+    font-size: 10px;
+  }
+}
